@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sports_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="14dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/list_img_sport"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/parlay_picks" />
+
+        <TextView
+            android:id="@+id/list_txt_sport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/list_img_sport"
+            android:text="@string/str_premium_picks"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/list_txt_badge"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:layout_toStartOf="@+id/list_img_arrow"
+            android:background="@drawable/sports_badge"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/colorGreenText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/list_img_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/grey_tick" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.picksplug.activity_toolbar.HeaderToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/topbar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_icon_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_back" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblHeaderTitle"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Header"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/img_notification_icon" />
+
+    </LinearLayout>
+
+
+</com.picksplug.activity_toolbar.HeaderToolbar>

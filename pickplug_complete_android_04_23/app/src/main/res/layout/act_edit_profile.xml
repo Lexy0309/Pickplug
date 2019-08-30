@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:mContext="com.picksplug.activity.ActEditProfile">
+
+    <include
+        android:id="@+id/edit_profile_toolbar"
+        layout="@layout/toolbar_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/update_img_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_user_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/img_textbox"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five"
+            android:paddingTop="@dimen/five">
+
+            <ImageView
+                android:id="@+id/img_profile_icon"
+                android:layout_width="@dimen/twenty5"
+                android:layout_height="@dimen/twenty5"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/img_profile_icon" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/one"
+                android:layout_height="@dimen/fourty"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/img_profile_icon"
+                android:background="@color/colorGrey" />
+
+            <EditText
+                android:id="@+id/user_edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five"
+                android:layout_toEndOf="@+id/view"
+                android:hint="@string/str_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/colorEditText"
+                android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                android:theme="@style/MyEditTextStyle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/img_textbox"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five"
+            android:paddingTop="@dimen/five">
+
+            <ImageView
+                android:id="@+id/img_email_icon"
+                android:layout_width="@dimen/twenty5"
+                android:layout_height="@dimen/twenty5"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/img_email_icon" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/one"
+                android:layout_height="@dimen/fourty"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_toEndOf="@+id/img_email_icon"
+                android:background="@color/colorGrey" />
+
+            <EditText
+                android:id="@+id/user_edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five"
+                android:layout_toEndOf="@+id/view1"
+                android:hint="@string/str_register_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/colorEditText"
+                android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                android:theme="@style/MyEditTextStyle" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/img_green_button"
+            android:paddingBottom="@dimen/five"
+            android:text="@string/btn_str_save"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

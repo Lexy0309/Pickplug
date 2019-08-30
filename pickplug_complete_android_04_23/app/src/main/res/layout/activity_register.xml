@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_marginTop="@dimen/ten"
+                    android:src="@drawable/applogo" />
+
+                <ImageView
+                    android:id="@+id/register_img_back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/img_back" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:gravity="center"
+                android:text="@string/str_register"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_register_with_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seventy"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/twenty5"
+                android:src="@drawable/img_facebook" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty"
+                android:background="@drawable/img_textbox"
+                android:paddingBottom="@dimen/ten"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five"
+                android:paddingTop="@dimen/five">
+
+                <ImageView
+                    android:id="@+id/img_register_name"
+                    android:layout_width="@dimen/twenty5"
+                    android:layout_height="@dimen/twenty5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/five"
+                    android:src="@drawable/img_profile_icon" />
+
+                <View
+                    android:id="@+id/view_name"
+                    android:layout_width="@dimen/one"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_toRightOf="@+id/img_register_name"
+                    android:background="@color/colorGrey" />
+
+                <EditText
+                    android:id="@+id/edt_register_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_toRightOf="@+id/view_name"
+                    android:hint="@string/str_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorEditText"
+                    android:textColorHint="@color/colorEditText"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:theme="@style/MyEditTextStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_textbox"
+                android:paddingBottom="@dimen/ten"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five"
+                android:paddingTop="@dimen/five">
+
+                <ImageView
+                    android:id="@+id/img_register_email"
+                    android:layout_width="@dimen/twenty5"
+                    android:layout_height="@dimen/twenty5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/five"
+                    android:paddingBottom="@dimen/five"
+                    android:src="@drawable/img_email_icon" />
+
+                <View
+                    android:id="@+id/view_email"
+                    android:layout_width="@dimen/one"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_toRightOf="@+id/img_register_email"
+                    android:background="@color/colorGrey" />
+
+                <EditText
+                    android:id="@+id/edt_register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_toRightOf="@+id/view_email"
+                    android:hint="@string/str_register_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorEditText"
+                    android:textColorHint="@color/colorEditText"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:theme="@style/MyEditTextStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/img_textbox"
+                android:paddingBottom="@dimen/ten"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five"
+                android:paddingTop="@dimen/five">
+
+                <ImageView
+                    android:id="@+id/img_register_password"
+                    android:layout_width="@dimen/twenty5"
+                    android:layout_height="@dimen/twenty5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/five"
+                    android:src="@drawable/img_key_icon" />
+
+                <View
+                    android:id="@+id/view_password"
+                    android:layout_width="@dimen/one"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_toRightOf="@+id/img_register_password"
+                    android:background="@color/colorGrey" />
+
+                <EditText
+                    android:id="@+id/edt_register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_toRightOf="@+id/view_password"
+                    android:hint="@string/str_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorEditText"
+                    android:textColorHint="@color/colorEditText"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:theme="@style/MyEditTextStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/img_textbox"
+                android:paddingBottom="@dimen/ten"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five"
+                android:paddingTop="@dimen/five">
+
+                <ImageView
+                    android:id="@+id/img_register_cpassword"
+                    android:layout_width="@dimen/twenty5"
+                    android:layout_height="@dimen/twenty5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/five"
+                    android:src="@drawable/img_key_icon" />
+
+                <View
+                    android:id="@+id/view_cpassword"
+                    android:layout_width="@dimen/one"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_toRightOf="@+id/img_register_cpassword"
+                    android:background="@color/colorGrey" />
+
+                <EditText
+                    android:id="@+id/edt_register_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_toRightOf="@+id/view_cpassword"
+                    android:hint="@string/str_confirm_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/colorEditText"
+                    android:textColorHint="@color/colorEditText"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:theme="@style/MyEditTextStyle" />
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/register_chk_agree_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:checked="false"
+                android:text="@string/str_login_below_text_1"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:theme="@style/checkBoxStyle" />
+
+            <TextView
+                android:id="@+id/register_txt_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/str_login_below_text_2"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty0"
+                android:layout_marginBottom="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/fourty"
+                android:layout_marginRight="@dimen/fourty"
+                android:layout_marginTop="@dimen/fifteen"
+                android:background="@drawable/img_yellow_button"
+                android:paddingBottom="@dimen/five"
+                android:text="@string/str_create_account"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="font3.ttf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="font5.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SportsBookCell" rowHeight="100" id="KGk-i7-Jjw" customClass="SportsBookCell" customModule="PickPlug" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHQ-e7-kOy">
+                        <rect key="frame" x="5" y="5" width="310" height="89.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qjS-uW-bw5">
+                                <rect key="frame" x="8" y="0.0" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="9Zg-S4-Ebn"/>
+                                    <constraint firstAttribute="height" constant="90" id="WgV-Kp-gGl"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AK8-21-R4T">
+                                <rect key="frame" x="106" y="8" width="199" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LON-Ef-XPQ" customClass="AILabel" customModule="PickPlug" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="30"/>
+                                        <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="14"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZI-ZT-0wd" customClass="AIButton" customModule="PickPlug" customModuleProvider="target">
+                                        <rect key="frame" x="129" y="0.0" width="70" height="30"/>
+                                        <color key="backgroundColor" red="0.43137254899999999" green="0.69411764710000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="NNx-vf-iCu"/>
+                                            <constraint firstAttribute="width" constant="70" id="iaF-DU-vvO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="16"/>
+                                        <state key="normal" title="JOIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LON-Ef-XPQ" firstAttribute="top" secondItem="AK8-21-R4T" secondAttribute="top" id="6ed-fZ-CCk"/>
+                                    <constraint firstAttribute="bottom" secondItem="LON-Ef-XPQ" secondAttribute="bottom" id="Vz3-8A-eus"/>
+                                    <constraint firstItem="NZI-ZT-0wd" firstAttribute="top" secondItem="AK8-21-R4T" secondAttribute="top" id="bpk-xW-w7x"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="fmT-36-vqj"/>
+                                    <constraint firstItem="NZI-ZT-0wd" firstAttribute="leading" secondItem="LON-Ef-XPQ" secondAttribute="trailing" constant="5" id="m4g-34-ZJl"/>
+                                    <constraint firstAttribute="trailing" secondItem="NZI-ZT-0wd" secondAttribute="trailing" id="tvw-jB-1fu"/>
+                                    <constraint firstItem="LON-Ef-XPQ" firstAttribute="leading" secondItem="AK8-21-R4T" secondAttribute="leading" id="yPu-ew-u5y"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-9V-s9M" customClass="AILabel" customModule="PickPlug" customModuleProvider="target">
+                                <rect key="frame" x="106" y="41" width="199" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="yIA-M5-ifE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsF-8n-30M" customClass="AILabel" customModule="PickPlug" customModuleProvider="target">
+                                <rect key="frame" x="106" y="64" width="199" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="s4J-bj-VY2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jsF-8n-30M" firstAttribute="top" secondItem="NJf-9V-s9M" secondAttribute="bottom" constant="3" id="3Qu-U3-qLi"/>
+                            <constraint firstItem="NJf-9V-s9M" firstAttribute="top" secondItem="AK8-21-R4T" secondAttribute="bottom" constant="3" id="6ce-sV-pxF"/>
+                            <constraint firstItem="qjS-uW-bw5" firstAttribute="leading" secondItem="wHQ-e7-kOy" secondAttribute="leading" constant="8" id="98M-Vp-Qtp"/>
+                            <constraint firstItem="AK8-21-R4T" firstAttribute="leading" secondItem="qjS-uW-bw5" secondAttribute="trailing" constant="8" id="GSR-bL-bbv"/>
+                            <constraint firstItem="qjS-uW-bw5" firstAttribute="centerY" secondItem="wHQ-e7-kOy" secondAttribute="centerY" id="Pk2-8J-TGG"/>
+                            <constraint firstItem="AK8-21-R4T" firstAttribute="top" secondItem="wHQ-e7-kOy" secondAttribute="top" constant="8" id="Ups-kh-g9X"/>
+                            <constraint firstAttribute="trailing" secondItem="AK8-21-R4T" secondAttribute="trailing" constant="5" id="Usp-9r-u4z"/>
+                            <constraint firstItem="NJf-9V-s9M" firstAttribute="leading" secondItem="qjS-uW-bw5" secondAttribute="trailing" constant="8" id="XxP-Wv-2WD"/>
+                            <constraint firstAttribute="trailing" secondItem="NJf-9V-s9M" secondAttribute="trailing" constant="5" id="cDQ-ab-4hu"/>
+                            <constraint firstItem="jsF-8n-30M" firstAttribute="leading" secondItem="qjS-uW-bw5" secondAttribute="trailing" constant="8" id="cje-Ih-6yG"/>
+                            <constraint firstAttribute="bottom" secondItem="jsF-8n-30M" secondAttribute="bottom" constant="5.5" id="qmm-9W-WgL"/>
+                            <constraint firstAttribute="trailing" secondItem="jsF-8n-30M" secondAttribute="trailing" constant="5" id="srl-of-uY0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wHQ-e7-kOy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1tl-f7-5Fl"/>
+                    <constraint firstItem="wHQ-e7-kOy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="LBv-4t-6ho"/>
+                    <constraint firstAttribute="trailing" secondItem="wHQ-e7-kOy" secondAttribute="trailing" constant="5" id="WDM-Sn-O70"/>
+                    <constraint firstAttribute="bottom" secondItem="wHQ-e7-kOy" secondAttribute="bottom" constant="5" id="rRn-we-fEn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="btnJoin" destination="NZI-ZT-0wd" id="Uoo-jQ-7zw"/>
+                <outlet property="imgProfile" destination="qjS-uW-bw5" id="fyU-Ts-63I"/>
+                <outlet property="lblDescription" destination="NJf-9V-s9M" id="d7S-sb-8Wd"/>
+                <outlet property="lblOperateSince" destination="jsF-8n-30M" id="1ys-6h-MZ1"/>
+                <outlet property="lblTitle" destination="LON-Ef-XPQ" id="Bty-DT-KH5"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="-28"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/premium_img_sport"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/parlay_picks" />
+
+    <TextView
+        android:id="@+id/premium_txt_sport_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="@string/str_premium_picks"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_round_rect_solid"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/premium_lbl_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_expiry_date"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/premium_txt_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07/06/2018"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

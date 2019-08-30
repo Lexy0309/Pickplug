@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6eb15a</color>
+    <color name="colorPrimaryDark">#6eb15a</color>
+    <color name="colorAccent">#6eb15a</color>
+    <color name="colorBackground">#FCFCFC</color>
+
+    <color name="colorSelTabBg">#438A2E</color>
+    <color name="colorTabBg">#6FB15A</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorSelTabText">#f7eb42</color>
+    <color name="colorTabText">#ffffff</color>
+    <color name="colorDarkGrey">#545454</color>
+    <color name="colorProfileBg">#79B04A</color>
+
+    <color name="colorGreenText">#6FB34E</color>
+    <color name="colorWinBg">#BFD34D</color>
+    <color name="colorLostBg">#E2E2E2</color>
+    <color name="colorScore">#99C14F</color>
+
+    <color name="colorGrey">#d9d7d7</color>
+    <color name="colorEditText">#4F4F4F</color>
+
+    <color name="colorNoPicksText">#9EC552</color>
+    <color name="colorBrown">#241E20</color>
+    <color name="colorBestValueBg">#ABCB4E</color>
+
+    <color name="colorLineDivider">#C2C2C2</color>
+    <color name="colorTransparentBlack">#4b000000</color>
+
+    <color name="colorProgressBar">#ffae0c</color>
+
+</resources>

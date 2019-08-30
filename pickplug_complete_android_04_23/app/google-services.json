@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "515510677851",
+    "firebase_url": "https://pickplug-33b1a.firebaseio.com",
+    "project_id": "pickplug-33b1a",
+    "storage_bucket": "pickplug-33b1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515510677851:android:204c7e1f172bbc10",
+        "android_client_info": {
+          "package_name": "com.picksplug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515510677851-a2sibchcqc4d2kk3qrsmhbgsiilvs4o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxBnwejRXFr2RJCsB_Wugj0MwvgYpqtWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
